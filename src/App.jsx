@@ -26,6 +26,7 @@ const initialClockTime = {
   minutes: 12,
   seconds: 0,
 };
+
 const timeLimitSetting = {
   hours: {
     max: 23,

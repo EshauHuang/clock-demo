@@ -1,45 +1,10 @@
-import styled from "styled-components";
 import PropTypes from "prop-types";
 
 import { renderTimeObjToString } from "../../utils/renderTimeString";
 
-import { ReactComponent as EditIcon } from "../../assets/edit.svg";
+import { Container, ClockEdit, EditButton, TimeShow } from "./ClockField.style";
 
 import Clock from "../Clock/Clock";
-
-const EditButton = styled(EditIcon)`
-  width: 100%;
-  height: 100%;
-  path {
-    fill: ${({ theme }) => theme.colors.primary};
-  }
-`;
-
-const ClockEdit = styled.div`
-  position: absolute;
-  top: 100%;
-  right: 0;
-  width: 25px;
-  height: 25px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-`;
-
-const TimeShow = styled.div`
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  color: ${({ theme }) => theme.colors.primary};
-`;
-
-const Container = styled.div`
-  display: flex;
-  align-items: center;
-  position: relative;
-`;
 
 const ClockField = ({
   clockTime,
@@ -71,7 +36,7 @@ const ClockField = ({
 };
 
 ClockField.propTypes = {
-  clockTime: PropTypes.objectOf({
+  clockTime: PropTypes.shape({
     seconds: PropTypes.number.isRequired,
     minutes: PropTypes.number.isRequired,
     hours: PropTypes.number.isRequired,

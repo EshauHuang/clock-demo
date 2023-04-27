@@ -101,9 +101,9 @@ const useClock = ({ initialClockTime, timeLimitSetting }) => {
         innerCircle.style.setProperty("--rotate", `${hourRotateDegree}deg`);
       }
 
-      animationRequestId.current = requestAnimationFrame((timestamp) =>
-        update(timestamp, lastUpdateTime)
-      );
+      // animationRequestId.current = requestAnimationFrame((timestamp) =>
+      //   update(timestamp, lastUpdateTime)
+      // );
     }
 
     animationRequestId.current = requestAnimationFrame((timestamp) =>

@@ -93,7 +93,7 @@ const OuterTriangle = styled.div`
   height: 0;
   width: 0;
   transform: translateY(
-    calc(-1 * 0.28867513459481287 * var(--border-bottom) * 0.5 - 4px)
+    calc(-1 * 0.28867513459481287 * var(--border-bottom) * 0.5 - 3px)
   );
 `;
 
@@ -109,7 +109,7 @@ const InnerTriangle = styled.div`
   height: 0;
   width: 0;
   transform: translateY(
-    calc(-1 * 0.28867513459481287 * var(--border-bottom) * 0.5 - 4px)
+    calc(-1 * 0.28867513459481287 * var(--border-bottom) * 0.5 - 3px)
   );
 `;
 
@@ -198,7 +198,7 @@ const MinuteHand = styled.div`
 
   transform: translate(-50%, -100%) rotate(var(--rotate));
   width: 5px;
-  height: ${({ long }) => long && long + 0.5}px;
+  height: ${({ long }) => long && long - 1}px;
   background-color: ${({ theme }) => theme.colors.bg};
   border: 1px solid ${({ theme }) => theme.colors.primary};
   border-top: 0;

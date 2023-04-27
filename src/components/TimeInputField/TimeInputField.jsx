@@ -99,9 +99,8 @@ const TimeInputField = ({
 };
 
 TimeInputField.propTypes = {
-  name: PropTypes.string,
-  limit: PropTypes.arrayOf(PropTypes.number),
-  value: PropTypes.number,
+  name: PropTypes.string.isRequired,
+  value: PropTypes.number.isRequired,
   label: PropTypes.string,
   HandleChangeClockTime: PropTypes.func.isRequired,
   handleClockTimeAdd: PropTypes.func.isRequired,

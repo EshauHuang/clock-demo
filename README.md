@@ -1,5 +1,9 @@
 # clock
 
+
+https://github.com/EshauHuang/clock-demo/assets/52191824/944415ae-2e09-4844-902f-7b5fea0d5a85
+
+
 - 左邊顯示目前的日期
 
 - 右邊為一個時鐘，點擊右下角的編輯按鈕可以調整時間
